@@ -8,7 +8,7 @@ Smartlook SDK heavily relies on the view tree "knowledge" so your "job" in this 
 
 ## The solution
 
-- Clone the project at https://github.com/krystofcelba/flutter_interview_test_task 
+- Clone the project at https://github.com/smartlook/smartlook_flutter_interview_test_task 
 - In the file `movie_streaming_app/lib/main.dart` there is a method `startServer()` with a simple embedded `HTTP` server running on port `8080` and a mocked request handler returning a sample `JSON`
 - Your task is to replace this mocked `JSON` with a real `JSON` data of the elements tree extracted from the app
 
