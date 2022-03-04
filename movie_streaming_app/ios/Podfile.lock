@@ -1,22 +1,16 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_smartlook (0.0.5):
-    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_smartlook (from `.symlinks/plugins/flutter_smartlook/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_smartlook:
-    :path: ".symlinks/plugins/flutter_smartlook/ios"
 
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  flutter_smartlook: 2aa304f6a38fc22b741ca750e0078606582525ae
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.2

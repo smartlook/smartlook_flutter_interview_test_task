@@ -38,17 +38,17 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Text(
                       "Sabrina",
-                      style: kHeadingextStyle,
+                      style: kHeadingTextStyle,
                     ),
                     SizedBox(height: 5),
                     Text(
                       "7.5 IMDB  ·  60m  ·  2018",
-                      style: kSubtitleTextSyule,
+                      style: kSubtitleTextStyle,
                     ),
                     SizedBox(height: 5),
                     Text(
                       "As her 16th birthday nears, Sabrina  must choose between the witch world of her family and the human .....",
-                      style: kSubtitleTextSyule,
+                      style: kSubtitleTextStyle,
                     ),
                     SizedBox(
                       height: 15,
@@ -229,19 +229,19 @@ class _HomePageState extends State<HomePage> {
           items: [
             new BottomNavigationBarItem(
               icon: new Icon(Icons.home),
-              title: new Text("Home"),
+              label: "Home",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.search),
-              title: new Text("Search"),
+              label: "Search",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.play_arrow_outlined),
-              title: new Text("Movies"),
+              label: "Movies",
             ),
             new BottomNavigationBarItem(
               icon: new Icon(Icons.live_tv),
-              title: new Text("TV Shows"),
+              label: "TV Shows",
             )
           ],
         ),

@@ -11,9 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   simple_animations: ^2.2.1
-  flutter_smartlook:
-    path: ../../smartlook-flutter-plugin/flutter_smartlook/
-
+  shelf: ^1.2.0
+  shelf_router: ^1.1.2
 
 dev_dependencies:
   flutter_test:

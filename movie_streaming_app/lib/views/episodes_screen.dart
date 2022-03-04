@@ -108,7 +108,7 @@ class _EpisodesScreenState extends State<EpisodesScreen> {
                 children: [
                   Text(
                     "Episode " + number,
-                    style: kSubtitleTextSyule,
+                    style: kSubtitleTextStyle,
                   ),
                   SizedBox(
                     height: 5,
@@ -118,7 +118,7 @@ class _EpisodesScreenState extends State<EpisodesScreen> {
                     text: TextSpan(children: <TextSpan>[
                       TextSpan(
                         text: "Chapter",
-                        style: kBoldedSubtitleTextSyule,
+                        style: kBoldedSubtitleTextStyle,
                       ),
                       TextSpan(
                           text: " " + episodeNumber + ": ",
@@ -128,7 +128,7 @@ class _EpisodesScreenState extends State<EpisodesScreen> {
                             fontWeight: FontWeight.bold,
                           )),
                       TextSpan(
-                          text: episdoeName, style: kBoldedSubtitleTextSyule),
+                          text: episdoeName, style: kBoldedSubtitleTextStyle),
                     ]),
                   ),
                   SizedBox(
@@ -142,7 +142,7 @@ class _EpisodesScreenState extends State<EpisodesScreen> {
                       ),
                       Text(
                         "  Download  ·  " + minutes + " min",
-                        style: kSubtitleTextSyule,
+                        style: kSubtitleTextStyle,
                       ),
                     ],
                   ),
@@ -154,7 +154,7 @@ class _EpisodesScreenState extends State<EpisodesScreen> {
         SizedBox(height: 15),
         Text(
           episodeDetails,
-          style: kSubtitleTextSyule,
+          style: kSubtitleTextStyle,
         ),
         SizedBox(height: 15),
         Divider(height: 4, color: kDividerColour),

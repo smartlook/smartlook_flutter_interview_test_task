@@ -19,7 +19,7 @@ class _MovieScreenState extends State<MovieScreen> {
       bottomNavigationBar: navBar(),
       body: Column(
         children: [
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height * 0.53,
             child: Stack(
               fit: StackFit.expand,
@@ -78,8 +78,8 @@ class _MovieScreenState extends State<MovieScreen> {
           width: 140,
           color: kPrimaryColor,
           child: ElevatedButton.icon(
-            icon: Icon(Icons.play_arrow),
-            label: Text(
+            icon: const Icon(Icons.play_arrow),
+            label: const Text(
               "Watch",
               style: TextStyle(fontSize: 18),
             ),
@@ -91,7 +91,7 @@ class _MovieScreenState extends State<MovieScreen> {
                 primary: kRedColor),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 15,
         ),
         Container(
@@ -99,15 +99,15 @@ class _MovieScreenState extends State<MovieScreen> {
           width: 140,
           color: kPrimaryColor,
           child: ElevatedButton.icon(
-            icon: Icon(
+            icon: const Icon(
               Icons.local_movies,
               color: Colors.black,
             ),
-            label: Text(
+            label: const Text(
               "Episodes",
               style: TextStyle(fontSize: 18, color: Colors.black),
             ),
-            onPressed: () => buildBottomSheet(),
+            onPressed: buildBottomSheet,
             style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(32.0),
@@ -122,17 +122,17 @@ class _MovieScreenState extends State<MovieScreen> {
   Widget movieNames() {
     return Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
-        Text(
+        const Text(
           "Stranger Things",
-          style: kHeadingextStyle,
+          style: kHeadingTextStyle,
         ),
-        SizedBox(height: 5),
-        Text(
+        const SizedBox(height: 5),
+        const Text(
           "8.7 IMDB  ·  50m  ·  2016",
-          style: kSubtitleTextSyule,
+          style: kSubtitleTextStyle,
         ),
       ],
     );
@@ -147,11 +147,11 @@ class _MovieScreenState extends State<MovieScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             RichText(
-              text: TextSpan(children: <TextSpan>[
+              text: const TextSpan(children: <TextSpan>[
                 TextSpan(
                     text: "Latest: ",
                     style: TextStyle(
@@ -164,39 +164,39 @@ class _MovieScreenState extends State<MovieScreen> {
                     style: TextStyle(fontSize: 17, color: Colors.white)),
               ]),
             ),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
               "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying super natural forces, and one strange girl",
-              style: kSubtitleTextSyule,
+              style: kSubtitleTextStyle,
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             RichText(
               textAlign: TextAlign.center,
-              text: TextSpan(children: <TextSpan>[
-                TextSpan(text: "Genres: ", style: kBoldedSubtitleTextSyule),
+              text: const TextSpan(children: <TextSpan>[
+                TextSpan(text: "Genres: ", style: kBoldedSubtitleTextStyle),
                 TextSpan(
                     text: "Drama, Mystery, Sci-Fi & Fantacy",
-                    style: kSubtitleTextSyule),
+                    style: kSubtitleTextStyle),
               ]),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             RichText(
               textAlign: TextAlign.center,
-              text: TextSpan(children: <TextSpan>[
-                TextSpan(text: "Stars: ", style: kBoldedSubtitleTextSyule),
+              text: const TextSpan(children: <TextSpan>[
+                TextSpan(text: "Stars: ", style: kBoldedSubtitleTextStyle),
                 TextSpan(
                     text:
                         "Mille Bobby Brown, Winona Ryder, David Harbour Finn Wolfhard, Caleb McLaughlin, Natalia Dyer.....",
-                    style: kSubtitleTextSyule),
+                    style: kSubtitleTextStyle),
               ]),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             RichText(
               textAlign: TextAlign.center,
-              text: TextSpan(children: <TextSpan>[
-                TextSpan(text: "Companies: ", style: kBoldedSubtitleTextSyule),
+              text: const TextSpan(children: <TextSpan>[
+                TextSpan(text: "Companies: ", style: kBoldedSubtitleTextStyle),
                 TextSpan(
-                    text: "21 laps entertainment", style: kSubtitleTextSyule),
+                    text: "21 laps entertainment", style: kSubtitleTextStyle),
               ]),
             ),
           ],
@@ -214,9 +214,9 @@ class _MovieScreenState extends State<MovieScreen> {
             primaryColor: kRedColor,
             textTheme: Theme.of(context)
                 .textTheme
-                .copyWith(caption: new TextStyle(color: kRedColor))),
+                .copyWith(caption: const TextStyle(color: kRedColor))),
         // sets the inactive color of the `BottomNavigationBar`
-        child: new BottomNavigationBar(
+        child: BottomNavigationBar(
           backgroundColor: kPrimaryColor,
           type: BottomNavigationBarType.fixed,
           iconSize: 28,
@@ -224,21 +224,21 @@ class _MovieScreenState extends State<MovieScreen> {
           unselectedFontSize: 12,
           currentIndex: 0,
           items: [
-            new BottomNavigationBarItem(
-              icon: new Icon(Icons.home),
-              title: new Text("Home"),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
             ),
-            new BottomNavigationBarItem(
-              icon: new Icon(Icons.search),
-              title: new Text("Search"),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: "Search",
             ),
-            new BottomNavigationBarItem(
-              icon: new Icon(Icons.play_arrow_outlined),
-              title: new Text("Movies"),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.play_arrow_outlined),
+              label: "Movies",
             ),
-            new BottomNavigationBarItem(
-              icon: new Icon(Icons.live_tv),
-              title: new Text("TV Shows"),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.live_tv),
+              label: "TV Shows",
             )
           ],
         ),
@@ -248,7 +248,7 @@ class _MovieScreenState extends State<MovieScreen> {
 
   void buildBottomSheet() async {
     await showModalBottomSheet(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(45), topRight: Radius.circular(45))),
         context: context,
