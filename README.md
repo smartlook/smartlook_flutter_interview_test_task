@@ -9,13 +9,14 @@ Smartlook SDK heavily relies on the view tree "knowledge" so your "job" in this 
 ## The solution
 
 - Clone the project at https://github.com/smartlook/smartlook_flutter_interview_test_task 
-- In the file `movie_streaming_app/lib/main.dart` there is a method `startServer()` with a simple embedded `HTTP` server running on port `8080` and a mocked request handler returning a sample `JSON`
-- Your task is to replace this mocked `JSON` with a real `JSON` data of the elements tree extracted from the app
+- In the file `movie_streaming_app/lib/main.dart` there is a method [_startServer()](https://github.com/smartlook/smartlook_flutter_interview_test_task/blob/936542713899508573c344ff3ce7136d08666d86/movie_streaming_app/lib/main.dart#L42) with a simple embedded `HTTP` server running on port `9000` and a mocked request handler returning a sample `JSON`
+- Your task is to write a function that gets the elements tree of the currently rendered screen from Flutter and return it as `JSON` instead of the mocked one.
 
 ## Format
 
-Each item of the list should correspond to one element currently visible on the screen and should contain these properties: 
-- `top` – the top coordinate of the element on the screen 
+Each item of the list should correspond to one element currently visible on the screen and should contain these properties:
+
+- `top` – the top coordinate of the element on the screen
 - `left` – the left coordinate of the element on the screen 
 - `width` – the width of the element 
 - `height` – the height of the element 
